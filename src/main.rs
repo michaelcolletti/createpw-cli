@@ -1,3 +1,36 @@
+/// This program generates a random password and hashes it using a specified algorithm.
+/// 
+/// # Usage
+/// 
+/// ```sh
+/// createpw-cli <length> <algorithm>
+/// ```
+/// 
+/// - `<length>`: The length of the password to generate (must be a positive integer).
+/// - `<algorithm>`: The hashing algorithm to use (either "SHA256" or "SHA3-384").
+/// 
+/// # Example
+/// 
+/// ```sh
+/// createpw-cli 16 SHA256
+/// ```
+/// 
+/// This will generate a random password of length 16 and hash it using the SHA256 algorithm.
+/// 
+/// # Functions
+/// 
+/// - `generate_password(length: usize) -> String`: Generates a random password of the specified length using alphanumeric characters.
+/// - `hash_password(password: &str, algorithm: &str) -> String`: Hashes the given password using the specified algorithm ("SHA256" or "SHA3-384").
+/// 
+/// # Panics
+/// 
+/// The program will panic if:
+/// - The length argument is not a valid positive integer.
+/// - The specified algorithm is not supported.
+/// 
+/// # Errors
+/// 
+/// The program will print an error message and exit if the number of arguments is incorrect.
 use rand::Rng;
 use rand::distributions::Alphanumeric;
 use sha2::{Sha256, Digest};

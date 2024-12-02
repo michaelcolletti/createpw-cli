@@ -1,0 +1,10 @@
+[package]
+name = "createpw-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"  # Example dependency
+regex = "1"   # Example dependency
+sha2 = "0.10.8"
+sha3 = "0.10.8"

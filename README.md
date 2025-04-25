@@ -1,3 +1,4 @@
+[![Rust](https://github.com/michaelcolletti/createpw-cli/actions/workflows/rust.yml/badge.svg)](https://github.com/michaelcolletti/createpw-cli/actions/workflows/rust.yml)
 ## The CREATEPW-CLI Rust Utility
 
 - This small Rust utility will use the SHA2-256 or SHA3-384 algorithms to create a password and hash and allow for parameterized options for amount of characters used and providing the hash and password for copying and pasting into anywhere.

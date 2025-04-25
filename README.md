@@ -40,7 +40,8 @@ target/release/createpw-cli <number of password characters> <SHA2-256 or SHA3-38
 
 - Example of creating a 12 character password using the SHA2-256 algorithm
 ```  
-cargo run 12 SHA2-256
+cargo run 12 SHA256
+target/createpw-cli 12 SHA256 
 ```
 - Example of creating a 24 character password using the SHA3-384 algorithm
 ```
